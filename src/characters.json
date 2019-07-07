@@ -1,0 +1,290 @@
+[
+    {
+        "id": 1,
+        "name": "Android18",
+        "image": "android18.jpg",
+        "clicked": false
+    },
+    {
+        "id": 2,
+        "name": "Android18",
+        "image": "android18.jpg",
+        "clicked": false
+    },
+    {
+        "id": 3,
+        "name": "Arale",
+        "image": "arale.jpg",
+        "clicked": false
+    },
+    {
+        "id": 4,
+        "name": "Arale",
+        "image": "arale.jpg",
+        "clicked": false
+    },
+    {
+        "id": 5,
+        "name": "Beerus",
+        "image": "beerus.jpg",
+        "clicked": false
+    },
+    {
+        "id": 6,
+        "name": "Beerus",
+        "image": "beerus.jpg",
+        "clicked": false
+    },
+    {
+        "id": 7,
+        "name": "Bulma",
+        "image": "bulma.jpg",
+        "clicked": false
+    },
+    {
+        "id": 8,
+        "name": "Bulma",
+        "image": "bulma.jpg",
+        "clicked": false
+    },
+    {
+        "id": 9,
+        "name": "Buu",
+        "image": "buu.jpg",
+        "clicked": false
+    },
+    {
+        "id": 10,
+        "name": "Buu",
+        "image": "buu.jpg",
+        "clicked": false
+    },
+    {
+        "id": 11,
+        "name": "Chichi",
+        "image": "chichi.jpg",
+        "clicked": false
+    },
+    {
+        "id": 12,
+        "name": "Chichi",
+        "image": "chichi.jpg",
+        "clicked": false
+    },
+    {
+        "id": 13,
+        "name": "Frieza",
+        "image": "frieza.webp",
+        "clicked": false
+    },
+    {
+        "id": 14,
+        "name": "Frieza",
+        "image": "frieza.webp",
+        "clicked": false
+    },
+    {
+        "id": 15,
+        "name": "Gohan",
+        "image": "gohan.jpg",
+        "clicked": false
+    },
+    {
+        "id": 16,
+        "name": "Gohan",
+        "image": "gohan.jpg",
+        "clicked": false
+    },
+    {
+        "id": 17,
+        "name": "Goku",
+        "image": "goku.png",
+        "clicked": false
+    },
+    {
+        "id": 18,
+        "name": "Goku",
+        "image": "goku.png",
+        "clicked": false
+    },
+    {
+        "id": 19,
+        "name": "Goten",
+        "image": "goten.jpg",
+        "clicked": false
+    },
+    {
+        "id": 20,
+        "name": "Goten",
+        "image": "goten.jpg",
+        "clicked": false
+    },
+    {
+        "id": 21,
+        "name": "Hercule",
+        "image": "hercule.jpg",
+        "clicked": false
+    },
+    {
+        "id": 22,
+        "name": "Hercule",
+        "image": "hercule.jpg",
+        "clicked": false
+    },
+    {
+        "id": 23,
+        "name": "Supreme Kai",
+        "image": "kai.jpg",
+        "clicked": false
+    },
+    {
+        "id": 24,
+        "name": "Supreme Kai",
+        "image": "kai.jpg",
+        "clicked": false
+    },
+    {
+        "id": 25,
+        "name": "Krillin",
+        "image": "krillin.webp",
+        "clicked": false
+    },
+    {
+        "id": 26,
+        "name": "Krillin",
+        "image": "krillin.webp",
+        "clicked": false
+    },
+    {
+        "id": 27,
+        "name": "Oolong",
+        "image": "oolong.jpg",
+        "clicked": false
+    },
+    {
+        "id": 28,
+        "name": "Oolong",
+        "image": "oolong.jpg",
+        "clicked": false
+    },
+    {
+        "id": 29,
+        "name": "Piccolo",
+        "image": "piccolo.jpg",
+        "clicked": false
+    },
+    {
+        "id": 30,
+        "name": "Piccolo",
+        "image": "piccolo.jpg",
+        "clicked": false
+    },
+    {
+        "id": 31,
+        "name": "Puar",
+        "image": "puar.jpg",
+        "clicked": false
+    },
+    {
+        "id": 32,
+        "name": "Puar",
+        "image": "puar.jpg",
+        "clicked": false
+    },
+    {
+        "id": 33,
+        "name": "Shenran",
+        "image": "shenran.jpg",
+        "clicked": false
+    },
+    {
+        "id": 34,
+        "name": "Shenran",
+        "image": "shenran.jpg",
+        "clicked": false
+    },
+    {
+        "id": 35,
+        "name": "Tien",
+        "image": "tien.png",
+        "clicked": false
+    },
+    {
+        "id": 36,
+        "name": "Tien",
+        "image": "tien.png",
+        "clicked": false
+    },
+    {
+        "id": 37,
+        "name": "Trunks",
+        "image": "trunks.jpg",
+        "clicked": false
+    },
+    {
+        "id": 38,
+        "name": "Trunks",
+        "image": "trunks.jpg",
+        "clicked": false
+    },
+    {
+        "id": 39,
+        "name": "Vegeta",
+        "image": "vegeta.jpeg",
+        "clicked": false
+    },
+    {
+        "id": 40,
+        "name": "Vegeta",
+        "image": "vegeta.jpeg",
+        "clicked": false
+    },
+    {
+        "id": 41,
+        "name": "Videl",
+        "image": "videl.png",
+        "clicked": false
+    },
+    {
+        "id": 42,
+        "name": "Videl",
+        "image": "videl.png",
+        "clicked": false
+    },
+    {
+        "id": 43,
+        "name": "Whis",
+        "image": "whis.jpg",
+        "clicked": false
+    },
+    {
+        "id": 44,
+        "name": "Whis",
+        "image": "whis.jpg",
+        "clicked": false
+    },
+    {
+        "id": 45,
+        "name": "Yamcha",
+        "image": "yamcha.jpg",
+        "clicked": false
+    },
+    {
+        "id": 46,
+        "name": "Yamcha",
+        "image": "yamcha.jpg",
+        "clicked": false
+    },
+    {
+        "id": 47,
+        "name": "Zeno",
+        "image": "zeno.jpg",
+        "clicked": false
+    },
+    {
+        "id": 48,
+        "name": "Zeno",
+        "image": "zeno.jpg",
+        "clicked": false
+    }
+]

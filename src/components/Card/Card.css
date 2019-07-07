@@ -1,0 +1,80 @@
+label {
+  width: 175px;
+  height: 120px;
+  margin: 5px;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.card {
+  border-radius: 2px;
+  box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transition: all 600ms;
+  transform-style: preserve-3d;
+  z-index: 20;
+}
+
+input {
+  display: none;
+}
+
+.card div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+}
+
+.card_face {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+}
+
+.front {
+  background-color: darkred;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.back {
+  background-color: darkred;
+  position: absolute;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+.card .back {
+  transform: rotateY(180deg);
+}
+
+label:hover .card {
+  transform: rotateY(1deg);
+}
+
+:checked + .card {
+  transform: rotateY(180deg);
+}
+
+label:hover :checked + .card {
+  transform: rotateY(180deg);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin-top: 18px;
+}
