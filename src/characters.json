@@ -286,5 +286,11 @@
         "name": "Zeno",
         "image": "zeno.jpg",
         "clicked": false
+    },
+    {
+        "id": 49,
+        "name": "background",
+        "image": "background.jpeg",
+        "clicked": false
     }
 ]
