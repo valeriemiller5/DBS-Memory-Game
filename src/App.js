@@ -6,27 +6,10 @@ import Wrapper from './components/Wrapper';
 import characters from './characters.json';
 
 class App extends Component {
-  state = {
-    characters,
-    isFlipped: false,
-    // clicked: characters,
-    chosenCards: [],
-    currentScore: 0,
-    // totalScore: 0, 
-  };
-  // create cards with images on the front and the same pattern on all on the back
-  // user can "flip" two cards
-  // if they match, they stay face up and score is increased +1
-  // if they do not match, they "flip" back over
-  // once all card matches have been found, +10 to final score
-  // game resets
-  // cards are shuffled and all are face down to start a new round
-  // users can log in and continue adding to their score each time they play the game
-  // Generate two of each image to match together
-
-  componentDidMount() {
+  constructor(props) {
+    super(props);
+    this.state = {characters};
     this.shuffleCharacter(characters);
-    // console.log(characters);
   }
 
   // Handles card 'shuffle' each time an image card is clicked
