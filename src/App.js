@@ -6,9 +6,13 @@ import Wrapper from './components/Wrapper';
 import characters from './characters.json';
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {characters};
+  constructor() {
+    super();
+    this.state = {
+      characters,
+      clicked: characters,
+      cardPair: []
+    };
     this.shuffleCharacter(characters);
   }
 
@@ -25,21 +29,11 @@ class App extends Component {
   }
 
   handleClick = name => {
-    let firstChoice = this.state.characters.filter(character => character.name === name);
-    console.log(this.state.characters)
-    console.log(firstChoice);
-    // let secondChoice = this.state.characters.map(character => character.name);
-    // let newScore = this.state.currentScore + 1;
-    // if(firstChoice === secondChoice) {
-    //   this.setState({
-    //     chosenCards: firstChoice, secondChoice,
-    //     isFlipped: true,
-    //     currentScore: newScore
-    //   })
-    // } else {
-
-    // }
-
+    let firstCard = name.target.alt
+    console.log(firstCard)
+    this.setState({
+      cardPair: name
+    })
   }
 
 
@@ -48,12 +42,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <Wrapper>
-          {this.state.characters.filter(character => {
-            if(character.id === 49) {
-              return false;
-            }
-            return true;
-          }).map(character => ( 
+          {this.state.characters.map(character => ( 
             <Card
               key={character.id}
               name={character.name}
