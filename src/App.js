@@ -11,7 +11,8 @@ class App extends Component {
     this.state = {
       characters,
       clicked: characters,
-      cardPair: []
+      cardPair: [],
+      matches: 0
     };
     this.shuffleCharacter(characters);
   }
@@ -29,11 +30,47 @@ class App extends Component {
   }
 
   handleClick = name => {
-    let firstCard = name.target.alt
-    console.log(firstCard)
+    let cardChoice = name.target.alt
+    console.log(`Character Name: ${cardChoice}`);
+    let checkMatch = this.state.cardPair.concat(cardChoice);
+    this.setState({ cardPair: checkMatch });
+    console.log(checkMatch);
+    let checkArrayLength = this.state.cardPair.length;
+    console.log(`Current Array Length: ${checkArrayLength}`);
+    if (checkArrayLength === 1) {
+      if (checkMatch[0] === checkMatch[1]) {
+        console.log("Yay, you have a match!")
+        this.setState({
+          cardPair: [],
+          matches: this.state.matches + 1,
+        });
+        console.log(`Matched pairs; ${this.state.matches}`);
+        document.getElementById("message").style.color = "orange";
+        document.getElementById("message").innerHTML = "Yay, you have a match!";
+      } else {
+        console.log("Awww, try again...")
+        this.setState({
+          cardPair: []
+        });
+        document.getElementById("message").style.color = "red";
+        document.getElementById("message").innerHTML = "Awww, try again...";
+      };
+    } else if (this.state.matches === 23) {
+      console.log("GAME OVER YOU WIN!!!!")
+      document.getElementById("message").style.color = "greed";
+      document.getElementById("message").innerHTML = "GAME OVER YOU WIN!!!!";
+      setTimeout(this.reset(), 2000);
+    } 
+  }
+
+  reset = () => {
     this.setState({
-      cardPair: name
-    })
+      characters,
+      clicked: characters,
+      cardPair: [],
+      matches: 0
+    });
+    this.shuffleCharacter(characters);
   }
 
 
@@ -42,14 +79,14 @@ class App extends Component {
       <div className="App">
         <Header />
         <Wrapper>
-          {this.state.characters.map(character => ( 
+          {this.state.characters.map(character => (
             <Card
               key={character.id}
               name={character.name}
               click={this.state.clicked}
               image={character.image}
               handleClick={this.handleClick}
-            /> 
+            />
           ))}
         </Wrapper>
         <Footer />

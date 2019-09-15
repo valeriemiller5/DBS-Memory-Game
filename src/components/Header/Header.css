@@ -1,7 +1,14 @@
 .navbar {
     background-color: black;
+    height: 73px;
 }
 
 h1 {
-    text-align: center;
+    color: lightgray;  
+}
+
+#message {
+    color: lightgray;
+    margin-left: 230px;
+    font-size: 18px;
 }
