@@ -29,12 +29,21 @@ class App extends Component {
     return arr;
   }
 
+  handleCardFlip = () => {
+    let matches = this.state.cardPair;
+    for(let i = 0; i < matches.length; i++) {
+      console.log(matches[i]);
+      document.getElementsByClassName("card")[i].click();
+    }
+  }
+
   handleClick = name => {
     let cardChoice = name.target.alt
     console.log(`Character Name: ${cardChoice}`);
     let checkMatch = this.state.cardPair.concat(cardChoice);
-    this.setState({ cardPair: checkMatch });
-    console.log(checkMatch);
+    this.setState({ cardPair: this.state.cardPair.concat(cardChoice) });
+    console.log(`concat cardChoice: ${checkMatch}`);
+    console.log(`cardPair after setState: ${this.state.cardPair}`)
     let checkArrayLength = this.state.cardPair.length;
     console.log(`Current Array Length: ${checkArrayLength}`);
     if (checkArrayLength === 1) {
@@ -49,6 +58,7 @@ class App extends Component {
         document.getElementById("message").innerHTML = "Yay, you have a match!";
       } else {
         console.log("Awww, try again...")
+        // setTimeout(this.handleCardFlip(), 2000);
         this.setState({
           cardPair: []
         });
@@ -57,9 +67,9 @@ class App extends Component {
       };
     } else if (this.state.matches === 23) {
       console.log("GAME OVER YOU WIN!!!!")
-      document.getElementById("message").style.color = "greed";
+      document.getElementById("message").style.color = "green";
       document.getElementById("message").innerHTML = "GAME OVER YOU WIN!!!!";
-      setTimeout(this.reset(), 2000);
+      setTimeout(function(){window.location.reload()}, 5000);
     } 
   }
 
